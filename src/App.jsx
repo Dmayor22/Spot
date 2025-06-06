@@ -5,7 +5,6 @@ import Footer from "./Components/Footer";
 import Card from "./Components/Card";
 import { ImageDetails } from "./data";
 
-
 function App() {
   const [data, setData] = useState(ImageDetails);
 

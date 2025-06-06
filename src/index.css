@@ -8,9 +8,14 @@
 }
 
 /* bckground colour for body */
+body{
+  width: 100vw;
+}
 
 .container {
   background-color: #fcf5e5;
+  width: 100%;
+
 }
 
 /* Header Section */
@@ -31,6 +36,7 @@ main {
   max-width: 1200px;
   margin: 0 auto;
   padding: 40px 20px;
+  
 }
 /* Profile section */
 .profile {
@@ -179,3 +185,24 @@ footer {
 input[type="email"]{
   width: 100%;
 }
+
+
+/*  */
+/* @media (max-width: 550px){
+  .img-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 20px auto;
+    max-width: 1200px;
+  }
+}
+@media (max-width: 3000px){
+  .img-container {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 20px auto;
+    max-width: 1200px;
+  }
+} */
