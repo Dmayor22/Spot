@@ -48,8 +48,6 @@ main {
   gap: 20px;
 }
 
-
-
 .profile_photo {
   width: 190px;
   height: 190px;
@@ -120,7 +118,6 @@ main {
   gap: 0.5rem;
 }
 
-
 .img-border {
   border-radius: 8px;
 }
@@ -132,8 +129,6 @@ main {
   font-size: 1.25rem;
   font-weight: 500;
 }
-
-
 
 hr {
   max-width: 1200px;
@@ -165,6 +160,22 @@ footer {
 
 .modal-content {
   background-color: white;
-  padding: 20px;
+  padding: 10px;
   border-radius: 5px;
+  height: 300px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.postBtn {
+  margin-right: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 2px solid grey;
+  font-size: 1rem;
+}
+input[type="email"]{
+  width: 100%;
 }

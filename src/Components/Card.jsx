@@ -14,8 +14,13 @@ const Card = ({ CardItem, selectedImage, onClickAction, closeModal }) => {
   };
   return (
     <>
-      <div className="image_1" >
-        <img className="img-border" src={CardItem.src} alt="" onClick={onClickAction}/>
+      <div className="image_1">
+        <img
+          className="img-border"
+          src={CardItem.src}
+          alt=""
+          onClick={onClickAction}
+        />
         <div className="image_text">
           <span>{CardItem.title}</span>
 

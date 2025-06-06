@@ -2,9 +2,11 @@ import React, { useState } from "react";
 import ProfileImage from "../../src/assets/images/bessie.png";
 import Edit from "../../src/assets/images/icons/edit_24dp_1F1F1F.png";
 import EditProfileModal from "./EditProfile";
+import NewPostModal from "./NewPostModal";
 
 const Profile = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isPostModalOpen, setIsPostModalOpen] = useState(false);
 
   const handleEditClick = () => {
     setIsModalOpen(true);
@@ -28,13 +30,19 @@ const Profile = () => {
           </div>
         </div>
 
-        <button className="new_post_btn">
+        <button
+          className="new_post_btn"
+          onClick={() => setIsPostModalOpen(true)}
+        >
           <span className="plus">+</span> New Post
         </button>
       </div>
       <hr />
       {isModalOpen && (
         <EditProfileModal onClose={() => setIsModalOpen(false)} />
+      )}
+      {isPostModalOpen && (
+        <NewPostModal onClose={() => setIsPostModalOpen(false)} />
       )}
     </>
   );

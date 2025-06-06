@@ -43,8 +43,8 @@ const EditProfileModal = ({ onClose }) => {
             <input type="file" accept="image/*" onChange={handleImageChange} />
           </label>
           {preview && <img src={preview} alt="Preview" width="100" />}
-          <button type="submit">Save Changes</button>
-          <button type="button" onClick={onClose}>
+          <button type="submit" className="postBtn">Save Changes</button>
+          <button type="button" onClick={onClose} className="postBtn">
             Cancel
           </button>
         </form>
